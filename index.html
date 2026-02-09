@@ -2,15 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Sample App</title>
+    <title>My GitHub App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <nav>
+        <h2>My App 🚀</h2>
+        <button onclick="toggleTheme()">🌙</button>
+    </nav>
+
     <div class="container">
-        <h1>Hello GitHub Pages 🚀</h1>
-        <p id="text">Click the button below</p>
-        <button onclick="changeText()">Click Me</button>
+        <h1 id="welcome">Welcome!</h1>
+
+        <div class="card">
+            <h3>Counter</h3>
+            <p id="count">0</p>
+            <button onclick="increment()">+</button>
+            <button onclick="decrement()">-</button>
+        </div>
+
+        <div class="card">
+            <h3>Save Your Name</h3>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="saveName()">Save</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
